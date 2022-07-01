@@ -117,13 +117,14 @@ client.on('interactionCreate', async interaction => {
         const attachment = await discTranscripts.createTranscript(interaction.channel);
 
         // embeds
+        // Logging Embed
         const logEmbed = new MessageEmbed()
             .setTitle(":tickets: Ticket Closed (ticket - " + interaction.member + ")")
             .setDescription("Ticket closed by <@" + interaction.member + ">")
             .setColor("DARK_ORANGE")
         //
 
-
+        // To change the ticket closing text, do it here
         await interaction.reply('Ticket will close in 5 seconds per request of <@' + interaction.member + '>...').then(setTimeout(function() {
             
             logChannel.send({embeds: [logEmbed], files: [attachment]}) + interaction.channel.delete()
