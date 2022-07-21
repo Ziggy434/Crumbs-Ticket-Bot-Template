@@ -101,7 +101,7 @@ client.on('interactionCreate', async interaction => {
 
         const logEmbed = new MessageEmbed()
         .setTitle(":tickets: Ticket Opened (ticket - " + interaction.member + ")")
-        .setDescription("Ticket closed by <@" + interaction.member + ">")
+        .setDescription("Ticket opened by <@" + interaction.member + ">")
         .setColor("GREEN")
         //
 
