@@ -5,8 +5,8 @@ config = {
 
 
     // Ticket Settings
-    ticketCatagory: "910350738482425896", // what catagory to create the ticket in
-    ticketLogChannel: "992366561396539394", // Where to send the ticket logs
+    ticketCatagory: "910350738482425896", // what catagory id to create the ticket in
+    ticketLogChannel: "992366561396539394", // channel id for where to send the ticket logs
 
 
 
